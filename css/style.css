@@ -1,21 +1,12 @@
 
-video {
-    position: fixed;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-}
-
 body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
+    max-width: 100vw;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
 }
 
 header {
@@ -27,6 +18,16 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+video {
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
 
 .logo img {
     animation-delay: 200ms;
@@ -158,7 +159,6 @@ h3 {
 }
 
 .top-footer {
-
     font-size: 19px;
     text-align: left;
     position: absolute;
@@ -168,138 +168,82 @@ h3 {
     margin-right: 250px;
 }
 
-
-.top-header-Dante {
+.top-header {
     font-size: 25px;
     text-align: left;
     text-shadow: 0 0 6px rgba(255, 0, 0, 0.9);
     position: absolute;
     left: 16px;
-    margin-left: 150px;
+}
 
+.top-header-Dante {
+    margin-left: 150px;
+}
+
+.top-header-Nero,
+.top-header-Vergil {
+    margin-left: 200px;
+
+}
+
+.top-body {
+    text-align: left;
+    position: absolute;
+    margin-left: 30px;
+    left: 16px;
 }
 
 .top-body-Dante {
     font-size: 20px;
-    text-align: left;
-    position: absolute;
     top: 28%;
-    left: 16px;
-    margin-left: 30px;
     margin-right: 730px;
-}
-
-.top-footer-Dante {
-    font-size: 19px;
-    text-align: left;
-    position: absolute;
-    top: 80%;
-    left: 16px;
-    margin-left: 30px;
-    margin-right: 150px;
-
-}
-
-
-
-.top-header-Nero {
-    font-size: 25px;
-    text-align: left;
-    text-shadow: 0 0 6px rgba(255, 0, 0, 0.9);
-    position: absolute;
-    left: 16px;
-    margin-left: 200px;;
-
 }
 
 .top-body-Nero {
     font-size: 22px;
-    text-align: left;
-    position: absolute;
     top: 40%;
-    left: 16px;
-    margin-left: 30px;
     margin-right: 650px;
 }
 
-.top-footer-Nero {
+.top-body-Vergil {
+    font-size: 22px;
+    top: 25%;
+    margin-right: 600px;
+}
+
+.top-footer {
     text-align: left;
     font-size: 19px;
     position: absolute;
+    left: 16px;
     margin-left: 30px;
+}
+
+.top-footer-Dante {
+    top: 80%;
+    left: 16px;
+    margin-right: 150px;
+
+}
+
+.top-footer-Nero {
     top: 85%;
     left: 16px;
     margin-right: 250px;
 }
 
-
-.top-header-Vergil {
-    text-align: left;
-    font-size: 40px;
-    text-shadow: 0 0 6px rgba(255, 0, 0, 0.9);
-    position: absolute;
-    left: 16px;
-    margin-left: 200px;
-
-}
-
-.top-body-Vergil {
-    text-align: left;
-    font-size: 22px;
-    position: absolute;
-    top: 25%;
-    left: 16px;
-    margin-left: 30px;
-    margin-right: 600px;
-}
-
 .top-footer-Vergil {
-    text-align: left;
-    font-size: 19px;
-    position: absolute;
-    margin-left: 30px;
     top: 75%;
     left: 16px;
     margin-right: 250px;
 }
 
-h4 {
-    max-width: 150px;
-}
-h1{
-    align-items: center;
-}
 
 .screenshots {
     display: flex;
     justify-content: center;
 }
 
-.hr {
-
-    color: white;
-    -webkit-box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
-    box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
-    animation: shadow 3s infinite;
-    margin: 50px 13px;
-}
-
-.hr {
-    -moz-box-shadow: 0 0
-    3px 2px rgba(255, 0, 0, 0.67);
-}
-.text_left{
-    text-align: left;
-}
-.text_center{
-    text-align: center;
-}
-.color_red{
-    color: red;
-}
-.color_white{
-    color:white;
-}
 .tr {
     align-items: center;
     color: white;
@@ -316,6 +260,7 @@ h1{
     margin-right: 20px;
     margin-top: 40px;
 }
+
 .hr_and {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -416,18 +361,21 @@ h1{
     padding: 15px;
     border-radius: 20px;
 }
-.standard-shadow{
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+
+.standard-shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.ol_style{
+.ol_style {
     -webkit-box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
     -moz-box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
     box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
     margin: 0 auto;
     border: 1px solid black;
-    background: rgba(0,0,0,.5);;width:200px;
+    background: rgba(0, 0, 0, .5);;
+    width: 200px;
 }
+
 .accent_color {
     color: #D43224;
 }
@@ -435,11 +383,13 @@ h1{
 .accen_color {
     color: #DC143C;
 }
+
 .accen_color_size {
     font-size: 100px;
     color: #DC143C;
 }
-.black_color{
+
+.black_color {
     color: #000000;
 }
 

@@ -1,3 +1,41 @@
+h1 {
+    align-items: center;
+}
+
+h4 {
+    max-width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.hr {
+    color: white;
+    -moz-box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
+    -webkit-box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
+    box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.67);
+    animation: shadow 3s infinite;
+    margin: 50px 13px;
+}
+
 .standard-shadow{
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.color_red {
+    color: red;
+}
+
+.color_white {
+    color: white;
 }
